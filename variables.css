@@ -1,0 +1,23 @@
+/*Variable*/
+/*Nesting*/
+#orderedlist {
+  font-size: 20px;
+}
+#orderedlist ol {
+  color: olive;
+  font-weight: bold;
+  margin-left: 40%;
+}
+
+/*Inheritance*/
+.message1, .message2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message2 {
+  background-color: white;
+}
+
+/*# sourceMappingURL=variables.css.map */

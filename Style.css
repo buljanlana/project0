@@ -1,0 +1,150 @@
+@import URL("variables.css");
+
+
+.secondarybg{
+  background: RGB(241, 241, 232);
+}
+
+/*Multiple element selector*/
+h1, h2 {
+  font-style: normal;
+  font-weight: bold;
+  color: 6B6450;
+  position: sticky;
+  text-align: center;
+}
+
+
+/*Pseudoclass selector*/
+.btn:hover{
+  background: black;
+  text-decoration-color: rgba(238, 226, 187, 0.3);
+  color:rgba(238, 226, 187, 0.3);
+}
+
+
+a.btn { text-decoration: none; }
+
+p{
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 20;
+}
+
+/*Attribute selector*/
+img[src*="jpg"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 50vw;
+}
+
+/*Bootstrap*/
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+/*Child selector*/
+.flexcontainer > div {
+    background-color: rgba(238, 226, 187, 0.9);
+    font-size: 20px;
+    margin: 15px;
+    padding: 20px;
+    width: 150px;
+}
+
+
+.my-container{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/*Responsive Design*/
+
+@media print{
+  #par3 {
+    display:none;
+  }
+}
+
+@media (min-width:700px){
+  #indexhd::before{
+    content: "Welcome to my page! Discover my taste in music!!!"
+  }
+  .indexbody{
+    background: URL(https://4.imimg.com/data4/UP/HW/MY-22869148/vinyl-wallpaper-500x500.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .btn {
+    text-align: center;
+    background: rgba(238, 226, 187, 0.9);
+    padding: 15px 20px;
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    width: 20%;
+    transition: 0.8s;
+    text-decoration: none;
+    border-radius: 0;
+    }
+}
+
+@media (max-width: 699px){
+  #indexhd::before{
+    content: "Welcome!!!!"
+      }
+  .indexbody{
+    background-color: white;
+  }
+
+  .btn {
+    text-align: center;
+    background: rgba(238, 226, 187, 0.9);
+    padding: auto auto;
+    font-size: auto;
+    margin: auto;
+    cursor: pointer;
+    width: auto;
+    transition: 0.8s;
+    text-decoration: none;
+    border-radius: 0;
+  }
+}
+
+
+/*Table design*/
+
+table.design {
+  border: 6px solid #948473;
+  background-color: #EEE2BB;
+  width: 100%;
+  text-align: center;
+}
+table.design td, table.design th {
+  border: 1px solid #948473;
+  padding: 4px 4px;
+}
+table.design tbody td {
+  font-size: 13px;
+}
+
+
+table.design thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: left;
+  border-left: 2px solid #948473;
+}
+table.design thead th:first-child {
+  border-left: none;
+}

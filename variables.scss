@@ -1,0 +1,25 @@
+/*Variable*/
+$color:olive;
+
+/*Nesting*/
+#orderedlist {
+  font-size: 20px;
+
+  ol{
+  color:$color;
+  font-weight: bold;
+  margin-left: 40%;
+  }
+}
+
+/*Inheritance*/
+.message1{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message2{
+  @extend .message1;
+  background-color: lighten($color,75%);
+}
